@@ -12,7 +12,7 @@
 		margin-top: 0;
 		padding: 0;
 		background: #000000;
-		width: 1722px;
+		width: 100%;
 		height: 100vh;
 		margin-left: auto; 
 		margin-right: auto; 
@@ -33,14 +33,16 @@
 	  }
 	  
     #header {
-			color: #00D1FF;
+        background-size :auto;
+        	color: #FFFFFF;
 			font-size: 20px;
 			font-weight: 400;
 			float: left; 
 			width: 1176px; 
 			height: 318px; 
 			line-height: 100px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+             border: 1px solid #FFFFFF;
+      
 	  }
 	  
 	  
@@ -49,7 +51,7 @@
 			width: 1176px; 
 			height: 1736px; 
 			line-height: 100px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+			background-color: #000000; border: 1px solid #FFFFFF;
 		 	background-image: url(img/durumari1.png);
 		 	background-size :cover;
 		 	background-repeat : no-repeat;
@@ -70,7 +72,7 @@
 			width: 276px; 
 			line-height: 50px;  
 			height: 2372px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+			background-color: #000000; border: 1px solid #FFFFFF;
 	  }
 	  
      #contents1 {
@@ -81,8 +83,8 @@
 			width: 960px; 
 			line-height: 600px;  
 			height: 1364px; 
-			background-color: #000000; border: 1px solid #00D1FF;
-		 	background-image: url(img/book16.png);
+			background-color: #ffffff; border: 1px solid #FFFFFF;
+		 	background-image: url(img/mainimg.png);
 		 	background-size :cover;
 		 	background-repeat : no-repeat;
 			background-position: center;
@@ -97,7 +99,7 @@
 			width: 276px; 
 			line-height: 300px;  
 			height: 318px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+			background-color: #000000; border: 1px solid #FFFFFF;
 		 	background-image: url(img/3.5.png);
 		 	background-size : 120%;
 		 	background-repeat : no-repeat;
@@ -105,7 +107,7 @@
 	  }
 	  
 	  #nav:hover {
-			background: #00D1FF;  
+			background: #FFFFFF;  
 		transition-property: all;
       	transition-duration: 1s; 
 	  }
@@ -116,12 +118,17 @@
 			width: 276px; 
 			line-height: 150px;  
 			height: 1738px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+			background-color: #000000; border: 1px solid #FFFFFF;
 		 	background-image: url(img/Frame2.png);
 		 	background-size :cover;
 		 	background-repeat : no-repeat;
 			background-position: center;
 	  }
+      #side_right:hover{
+          background: #FFFFFF;  
+		transition-property: all;
+      	transition-duration: 1s; 
+      }
 	  
         #footer {position: absolute;
 			margin-top: 2054px; 
@@ -129,13 +136,13 @@
 			width: 1452px; 
 			height: 318px; 
 			line-height: 100px; 
-			background-color: #000000; border: 1px solid #00D1FF;
+			background-color: #000000; border: 1px solid #FFFFFF;
 	  }
 	  
 	 
 	  
 	  p2 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 16px;
 			position: absolute;
 		  	text-align: left;
@@ -146,7 +153,7 @@
 	  }
 	  
 	  p4 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 20px;
 			font-weight: 200;
 			position: absolute;
@@ -158,7 +165,7 @@
 	  }
 	  
 	  p3 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 14px;
 			position: absolute;
 		  	text-align: left;
@@ -170,7 +177,7 @@
 		  
 	  }
 	   p5 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 16px;
 			position: absolute;
 		  	text-align: left;
@@ -180,7 +187,7 @@
 		  
 	  }
 		p6 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 14px;
 			position: absolute;
 		  	text-align: left;
@@ -193,15 +200,15 @@
 	  }
 	  
 	  p7 {
-		 	color:#00D1FF;
+		 	color:#FFFFFF;
 			font-size: 20px;
 			font-weight: 200;
 			line-height: 150%;
 		  
 	  }
 	  
-	  	a:link{color:#00D1FF; text-decoration: none;}
-		a:visited {color:#00D1FF; text-decoration: none;}
+	  	a:link{color:#FFFFFF; text-decoration: none;}
+		a:visited {color:#FFFFFF; text-decoration: none;}
 		a:hover {color:#000000; text-decoration: none;}
 	 
 	  
@@ -210,7 +217,7 @@
 <body>
 	
 <div id="wrap">
-		<div id="side_left"><a href="index.html"><p>← 처음으로</p></a>
+		<div id="side_left"><a href="loading.html"><p>← 처음으로</p></a>
 	</div>
         <div id="header">
 			<p1>Q. 책꽂이에서 본질적으로 잘못된 점, 또는 의심스러운 점은 무엇인가?</p1>
@@ -224,7 +231,9 @@
         <div id="contents1">
 	
 	</div>
-        <div id="side_right"></div>
+            <div id="side_right" style=" cursor: help;" onclick="location.href='fontsystem.html';">
+			<p7>폰트 시스템</p7>
+	</div>
 		<div id="nav" style=" cursor: help;" onclick="location.href='3.5dimension.html';">
 			<p4>3.5차원의 책꽂이 상상하기</p4>
 	</div>
